@@ -9,7 +9,7 @@ namespace Bookshelf.Models
     public class Author
     {
         [Key]
-        public string Author { get; set; }
+        public int ID { get; set; }
         public string Name { get; set; }
         public virtual ICollection<Book> Books { get; set; }
     }

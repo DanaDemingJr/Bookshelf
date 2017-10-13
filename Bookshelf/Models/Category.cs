@@ -10,7 +10,7 @@ namespace Bookshelf.Models
     {
         [Key]
         public int ID { get; set; }
-        public string Name { get; set; }
+        public string Genre { get; set; }
         public virtual ICollection<Book> Books { get; set; }
     }
 }

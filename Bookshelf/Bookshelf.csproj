@@ -163,6 +163,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AuthorsController.cs" />
     <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -173,11 +174,12 @@
     <Compile Include="Migrations\201710112356416_InitialCreate.Designer.cs">
       <DependentUpon>201710112356416_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201710120031174_AddAuthor.cs" />
-    <Compile Include="Migrations\201710120031174_AddAuthor.Designer.cs">
-      <DependentUpon>201710120031174_AddAuthor.cs</DependentUpon>
+    <Compile Include="Migrations\201710122351273_AddAuthor.cs" />
+    <Compile Include="Migrations\201710122351273_AddAuthor.Designer.cs">
+      <DependentUpon>201710122351273_AddAuthor.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Author.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\BookshelfContext.cs" />
     <Compile Include="Models\Category.cs" />
@@ -237,16 +239,21 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Books\Create.cshtml" />
-    <Content Include="Views\Books\Delete.cshtml" />
-    <Content Include="Views\Books\Details.cshtml" />
-    <Content Include="Views\Books\Edit.cshtml" />
-    <Content Include="Views\Books\Index.cshtml" />
     <Content Include="Views\Categories\Create.cshtml" />
     <Content Include="Views\Categories\Delete.cshtml" />
     <Content Include="Views\Categories\Details.cshtml" />
     <Content Include="Views\Categories\Edit.cshtml" />
     <Content Include="Views\Categories\Index.cshtml" />
+    <Content Include="Views\Books\Create.cshtml" />
+    <Content Include="Views\Books\Delete.cshtml" />
+    <Content Include="Views\Books\Details.cshtml" />
+    <Content Include="Views\Books\Edit.cshtml" />
+    <Content Include="Views\Books\Index.cshtml" />
+    <Content Include="Views\Authors\Create.cshtml" />
+    <Content Include="Views\Authors\Delete.cshtml" />
+    <Content Include="Views\Authors\Details.cshtml" />
+    <Content Include="Views\Authors\Edit.cshtml" />
+    <Content Include="Views\Authors\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -261,8 +268,8 @@
     <EmbeddedResource Include="Migrations\201710112356416_InitialCreate.resx">
       <DependentUpon>201710112356416_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201710120031174_AddAuthor.resx">
-      <DependentUpon>201710120031174_AddAuthor.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201710122351273_AddAuthor.resx">
+      <DependentUpon>201710122351273_AddAuthor.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
